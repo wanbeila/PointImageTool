@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18e5dd3d-2ea2-423f-81a8-24654dd75fba" name="Default Changelist" comment="" />
+    <list default="true" id="18e5dd3d-2ea2-423f-81a8-24654dd75fba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PointImage$test.coverage" NAME="test Coverage Results" MODIFIED="1543894400812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PointImage$test.coverage" NAME="test Coverage Results" MODIFIED="1543895238431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$test.coverage" NAME="test Coverage Results" MODIFIED="1543892544027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1543542399268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -66,18 +69,58 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1333775508">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="md" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Markdown" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="md" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="41" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="274" column="38" selection-start-line="274" selection-start-column="38" selection-end-line="274" selection-end-column="38" />
+            <state relative-caret-position="644">
+              <caret line="289" column="27" selection-start-line="289" selection-start-column="27" selection-end-line="289" selection-end-column="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <marker date="1543894399483" expanded="true" signature="1522:1527" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="46">
+                <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -115,6 +158,9 @@
       <find>CURRENT_IMAGE_SIZE_IN_CANVAS</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -124,6 +170,7 @@
         <option value="$PROJECT_DIR$/button/generateButton.py" />
         <option value="$PROJECT_DIR$/Point.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/../README.md" />
       </list>
     </option>
   </component>
@@ -139,6 +186,7 @@
     <option name="width" value="712" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -151,17 +199,6 @@
               <item name="PointImage" type="b2602c69:ProjectViewProjectNode" />
               <item name="PointImage" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PointImage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointImage" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointImage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointImage" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
-              <item name="icon" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -171,7 +208,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../README.md" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -269,7 +306,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09541578" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.096481875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -280,7 +317,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -331,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="274" column="38" selection-start-line="274" selection-start-column="38" selection-end-line="274" selection-end-column="38" />
+        <state relative-caret-position="644">
+          <caret line="289" column="27" selection-start-line="289" selection-start-column="27" selection-end-line="289" selection-end-column="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <marker date="1543894399483" expanded="true" signature="1522:1527" ph="..." />
@@ -347,6 +384,16 @@
           <folding>
             <marker date="1543827756835" expanded="true" signature="20:25" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
