@@ -41,7 +41,6 @@ def auto_resize_image(image, **kw):
         resize_width = kw['width']
     else:
         resize_width = MAX_RESIZE_WIDTH
-
     # 此时判断为初始输入的操作
     if raw_width <= resize_width:
         CURRENT_IMAGE_SIZE_IN_CANVAS = [raw_width, raw_height]
@@ -88,8 +87,9 @@ def reset_params():
 def _next_image():
     global CURRENT_IMAGE_INDEX
     if check_save():
-        if CURRENT_IMAGE_INDEX < SELECTED_IMAGE_NUMBERS:
+        if CURRENT_IMAGE_INDEX < SELECTED_IMAGE_NUMBERS - 1:
             CURRENT_IMAGE_INDEX = CURRENT_IMAGE_INDEX + 1
+        print(CURRENT_IMAGE_INDEX)
         reset_params()
         show_image_in_canvas()
 
@@ -117,7 +117,7 @@ def resize_image(image):
 # ---------------------------------------在画布中显示图像 本程序的核心方法 开始------------------------------------------------
 def show_image_in_canvas(**kw):
     global SELECTED_IMAGE_NUMBERS, SELECTED_FILE_NAME, CURRENT_IMAGE_INDEX
-    global mid_canvas
+    global mid_canvas, image_to_show
     # noinspection PyGlobalUndefined
     global CURRENT_IMAGE_LIST
     if len(CURRENT_IMAGE_LIST) > 0 and CURRENT_IMAGE_INDEX <= len(CURRENT_IMAGE_LIST):
@@ -130,17 +130,18 @@ def show_image_in_canvas(**kw):
             img = Image.open(SELECTED_FILE_NAME)
             # img = resize_image(img)
             img = auto_resize_image(img, **kw)
-            image = ImageTk.PhotoImage(img)
-            img_width = image.width()
-            img_height = image.height()
+            image_to_show = ImageTk.PhotoImage(img)
+            img_width = image_to_show.width()
+            img_height = image_to_show.height()
             mid_canvas.config(
                 scrollregion=(0, 0, img_width, img_height)
             )
-            mid_canvas.create_image(img_width / 2, img_height / 2, image=image)
+            mid_canvas.create_image(img_width / 2, img_height / 2, image=image_to_show)
             """
             这是什么神之bug，不加下面这行图片就显示不出来了！！！！！！
             """
-            CURRENT_IMAGE_LIST.append(image)
+            # CURRENT_IMAGE_LIST.append(image)
+            # mainloop()
             print('当前显示%d张图片，共有%d张' % (CURRENT_IMAGE_INDEX + 1, SELECTED_IMAGE_NUMBERS))
         else:
             print('nothing')
@@ -172,6 +173,9 @@ def list_image_from_folder(folder):
             tail = folder[folder.rfind('.'):len(folder)].lower()
             # print(tail)
             if tail.find('.jpg') != -1 or tail.find('.png') != -1 or tail.find('.bmp') != -1:
+                # 格式化路径
+                folder = folder.replace('\\', '/')
+                # print(folder)
                 CURRENT_IMAGE_LIST.append(folder)
                 update_listbox_by_current_images()
                 SELECTED_IMAGE_NUMBERS = SELECTED_IMAGE_NUMBERS + 1
@@ -211,6 +215,7 @@ def generate_menu(main_window):
     file_menu = Menu(main_menu_bar, tearoff=0)
     about_menu = Menu(main_menu_bar, tearoff=0)
     main_menu_bar.add_cascade(label='文件', menu=file_menu)
+    # main_menu_bar.add_cascade(label='全自动模式', menu=)
     main_menu_bar.add_cascade(label='关于', menu=about_menu)
     # 在文件选项下生成点击命令
     # file_menu.add_command(label='选择文件', command=lambda: _select_file())

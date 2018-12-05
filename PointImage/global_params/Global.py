@@ -52,3 +52,6 @@ CURRENT_IMAGE_IN_CANVAS_RAW_WIDTH = 0
 CURRENT_IMAGE_IN_CANVAS_RAW_HEIGHT = 0
 # 右侧布局的listbox用于显示文件名称
 file_listbox = None
+# 需要将要显示的图片展示在外面，也就是将canvas即将绘制的图片放在与main_loop同一作用域下面
+# 局部的image会被gc回收
+image_to_show = None
