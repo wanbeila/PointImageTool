@@ -55,3 +55,4 @@ file_listbox = None
 # 需要将要显示的图片展示在外面，也就是将canvas即将绘制的图片放在与main_loop同一作用域下面
 # 局部的image会被gc回收
 image_to_show = None
+save_moving_points = Queue(4)

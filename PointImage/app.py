@@ -3,6 +3,8 @@ from tkinter import *
 from tkinter import filedialog, messagebox
 from PIL import Image, ImageTk
 
+from points.moved_points import MovingPoint
+
 """
 目前完成了，从指定的文件夹中读取图片，并且显示图片，在程序运行过程中对图片进行标点操作
 每次需要标记4个点，保存到对应的图片文件的同路径下的同名txt文件中，txt文件包括有图片完整路径，点的横纵坐标
@@ -81,6 +83,7 @@ def reset_params():
     DOUBLE_IMAGE_WIDTH = 1.0
     mid_canvas.delete('all')
     save_points.queue.clear()
+    save_moving_points.queue.clear()
 
 
 # 切换下一张图片
@@ -235,24 +238,32 @@ def generate_point_txt_file(x_pos, y_pos):
     global save_points, CURRENT_POINT_NUMBER_IN_IMAGE, \
         HAS_SAVED, mid_canvas, \
         CURRENT_IMAGE_IN_CANVAS_RAW_HEIGHT, CURRENT_IMAGE_IN_CANVAS_RAW_WIDTH, \
-        CIRCLE_RADIUS, IS_POINT_EVENT_DONE, DOUBLE_IMAGE_WIDTH, DOUBLE_IMAGE_HEIGHT
+        CIRCLE_RADIUS, IS_POINT_EVENT_DONE, DOUBLE_IMAGE_WIDTH, DOUBLE_IMAGE_HEIGHT, save_moving_points
     if CURRENT_POINT_NUMBER_IN_IMAGE >= 4:
         messagebox.showinfo(title='tip', message='当前图中已经包含了四个点')
         return
     else:
         HAS_SAVED = False
-        c_x_start = x_pos - CIRCLE_RADIUS
-        c_y_start = y_pos - CIRCLE_RADIUS
-        c_x_end = x_pos + CIRCLE_RADIUS
-        c_y_end = y_pos + CIRCLE_RADIUS
-        mid_canvas.create_oval(c_x_start, c_y_start, c_x_end, c_y_end, fill='green')
-        save_points.put(Point(
-            float('%.3f' % float((x_pos * DOUBLE_IMAGE_WIDTH) / CURRENT_IMAGE_IN_CANVAS_RAW_WIDTH)),
-            float('%.3f' % float((y_pos * DOUBLE_IMAGE_HEIGHT) / CURRENT_IMAGE_IN_CANVAS_RAW_HEIGHT))
-        ))
+        # c_x_start = x_pos - CIRCLE_RADIUS
+        # c_y_start = y_pos - CIRCLE_RADIUS
+        # c_x_end = x_pos + CIRCLE_RADIUS
+        # c_y_end = y_pos + CIRCLE_RADIUS
+        # mid_canvas.create_oval(c_x_start, c_y_start, c_x_end, c_y_end, fill='green')
+        point = MovingPoint(canvas=mid_canvas, label=str(CURRENT_POINT_NUMBER_IN_IMAGE), radius=3, x_pos=x_pos,
+                            y_pos=y_pos, raw_width=CURRENT_IMAGE_IN_CANVAS_RAW_WIDTH,
+                            double_image_width=DOUBLE_IMAGE_WIDTH,
+                            double_image_height=DOUBLE_IMAGE_HEIGHT,
+                            raw_height=CURRENT_IMAGE_IN_CANVAS_RAW_HEIGHT)
+        # save_points.put(Point(
+        #     float('%.3f' % float((x_pos * DOUBLE_IMAGE_WIDTH) / CURRENT_IMAGE_IN_CANVAS_RAW_WIDTH)),
+        #     float('%.3f' % float((y_pos * DOUBLE_IMAGE_HEIGHT) / CURRENT_IMAGE_IN_CANVAS_RAW_HEIGHT))
+        # ))
+        save_moving_points.put(point)
         CURRENT_POINT_NUMBER_IN_IMAGE = CURRENT_POINT_NUMBER_IN_IMAGE + 1
         if CURRENT_POINT_NUMBER_IN_IMAGE == 4:
             IS_POINT_EVENT_DONE = True
+            mid_canvas.unbind('<ButtonPress-1>')
+            mid_canvas.unbind('<B1-Motion>')
 
 
 # 保存当前的点集
@@ -272,11 +283,16 @@ def _on_save():
         fp = open(txt_filename, 'w')
         fp.write(SELECTED_FILE_NAME)
         fp.write(' ')
-        while not save_points.empty():
-            point = save_points.get()
-            fp.write(str(point))
-            fp.write(' ')
+        # while not save_points.empty():
+        #     point = save_points.get()
+        #     fp.write(str(point))
+        #     fp.write(' ')
         # print(txt_filename)
+        while not save_moving_points.empty():
+            point = save_moving_points.get()
+            fp.write(point.get_save_x_y())
+            fp.write(' ')
+        print(txt_filename)
         fp.close()
         # 当本张图完成标点操作，则从列表中移除
         del CURRENT_IMAGE_LIST[CURRENT_IMAGE_INDEX]
@@ -297,11 +313,18 @@ def _on_mouse_click_in_canvas(event):
             generate_point_txt_file(x_pos, y_pos)
 
 
+def _on_mouse_motion_in_canvas(event):
+    pass
+
+
 # ========================end=======生成坐标点文件
 
 def draw_rec():
-    global IS_POINT_EVENT_DONE
+    global IS_POINT_EVENT_DONE, mid_canvas
     IS_POINT_EVENT_DONE = not IS_POINT_EVENT_DONE
+    mid_canvas.bind('<MouseWheel>', mousewheel_proceed)
+    mid_canvas.bind('<Motion>', _on_mouse_move_in_canvas)
+    mid_canvas.bind('<Button-1>', _on_mouse_click_in_canvas)
     # print(IS_POINT_EVENT_DONE)
 
 

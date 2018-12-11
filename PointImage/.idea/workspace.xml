@@ -9,11 +9,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PointImage$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1543995704922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/python_3_6_5/Lib/tkinter" />
     <SUITE FILE_PATH="coverage/PointImage$test.coverage" NAME="test Coverage Results" MODIFIED="1543982485433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PointImage$app.coverage" NAME="app Coverage Results" MODIFIED="1543985893754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PointImage$Test.coverage" NAME="Test Coverage Results" MODIFIED="1544521216601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/PointImage$app.coverage" NAME="app Coverage Results" MODIFIED="1544523391540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$test.coverage" NAME="test Coverage Results" MODIFIED="1543892544027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PointImage$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1543981109135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1543542399268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PointImage$MyPoint.coverage" NAME="MyPoint Coverage Results" MODIFIED="1544169270146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/point" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="448666558">
@@ -53,31 +56,34 @@
     <session id="-881304386">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="py" value="3140" />
+          <entry key="py" value="11397" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="3140" />
+          <entry key="Python" value="11397" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="6" />
+          <entry key="py" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="6" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
     </session>
@@ -87,14 +93,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="132" column="51" lean-forward="true" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+            <state relative-caret-position="331">
+              <caret line="259" column="12" lean-forward="true" selection-start-line="259" selection-start-column="12" selection-end-line="259" selection-end-column="12" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1543985892663" expanded="true" signature="387:518" ph="..." />
-                <marker date="1543985892663" expanded="true" signature="839:844" ph="..." />
-                <marker date="1543985892663" expanded="true" signature="16772:16951" ph="..." />
-                <marker date="1543985892663" expanded="true" signature="18295:18298" ph="..." />
+                <marker date="1544523201367" expanded="true" signature="432:563" ph="..." />
+                <marker date="1544523201367" expanded="true" signature="884:889" ph="..." />
+                <marker date="1544523201367" expanded="true" signature="11080:11092" ph="..." />
+                <marker date="1544523201367" expanded="true" signature="17867:18046" ph="..." />
+                <marker date="1544523201367" expanded="true" signature="19390:19393" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/points/moved_points.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="54" column="104" selection-start-line="54" selection-start-column="104" selection-end-line="54" selection-end-column="104" />
+              <folding>
+                <marker date="1544523315306" expanded="true" signature="335:340" ph="..." />
+                <marker date="1544523315306" expanded="true" signature="417:2123" ph="..." />
+                <marker date="1544523315306" expanded="true" signature="2123:2128" ph="..." />
+                <marker date="1544523315306" expanded="true" signature="2643:2649" ph="..." />
+                <marker date="1544523315306" expanded="true" signature="2820:2825" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/python_3_6_5/Lib/tkinter/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="1202" selection-start-line="1202" selection-end-line="1202" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="93" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="93" />
+              <folding>
+                <marker date="1544521089019" expanded="true" signature="45:47" ph="..." />
               </folding>
             </state>
           </provider>
@@ -103,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="63" lean-forward="true" selection-start-line="8" selection-end-line="13" selection-end-column="63" />
+            <state relative-caret-position="253">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -112,11 +156,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/global_params/Global.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+            <state relative-caret-position="490">
+              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -152,13 +196,19 @@
       <find>clear</find>
       <find>resize_image</find>
       <find>CURRENT_IMAGE_SIZE_IN_CANVAS</find>
-      <find>save_points</find>
       <find>400</find>
       <find>delete</find>
       <find>reset_params</find>
       <find>listvariable</find>
       <find>print</find>
       <find>CURRENT_IMAGE_LIST</find>
+      <find>label</find>
+      <find>create_text</find>
+      <find>event</find>
+      <find>save_points</find>
+      <find>mid_canvas</find>
+      <find>_on_save</find>
+      <find>messagebox</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -171,8 +221,12 @@
         <option value="$PROJECT_DIR$/global/Global.py" />
         <option value="$PROJECT_DIR$/demo1.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/label/MyLabel.py" />
+        <option value="$PROJECT_DIR$/point/MyPoint.py" />
+        <option value="$PROJECT_DIR$/test/Test.py" />
         <option value="$PROJECT_DIR$/global_params/Global.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/points/moved_points.py" />
       </list>
     </option>
   </component>
@@ -183,8 +237,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1205" />
-    <option name="y" value="105" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="712" />
     <option name="height" value="1047" />
   </component>
@@ -193,6 +247,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,11 +260,20 @@
               <item name="PointImage" type="462c0819:PsiDirectoryNode" />
               <item name="button" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PointImage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PointImage" type="462c0819:PsiDirectoryNode" />
+              <item name="points" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PointImage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PointImage" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,6 +281,7 @@
     <property name="last_opened_file_path" value="E:/git_dir/PointImageTool/PointImage" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -240,6 +305,72 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.app">
+    <configuration name="MyPoint" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/point" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/point/MyPoint.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/python_3_6_5/Lib/tkinter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:/python_3_6_5/Lib/tkinter/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,28 +385,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -308,14 +417,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.demo1" />
       <item itemvalue="Python.app" />
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python.MyPoint" />
+      <item itemvalue="Python.Test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.Test" />
+        <item itemvalue="Python.MyPoint" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.demo1" />
       </list>
     </recent_temporary>
   </component>
@@ -336,12 +449,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13486141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1670282" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1735358" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,6 +485,11 @@
           <url>file://D:/python_3_6_5/Lib/tkinter/__init__.py</url>
           <line>2338</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>251</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -407,6 +525,8 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/label/MyLabel.py" />
+    <entry file="file://$PROJECT_DIR$/point/MyPoint.py" />
     <entry file="file://$PROJECT_DIR$/Point.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -419,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="63" lean-forward="true" selection-start-line="8" selection-end-line="13" selection-end-column="63" />
+        <state relative-caret-position="253">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -429,29 +549,57 @@
     </entry>
     <entry file="file://D:/python_3_6_5/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="554" column="4" selection-start-line="554" selection-start-column="4" selection-end-line="554" selection-end-column="4" />
+        <state relative-caret-position="173">
+          <caret line="1202" selection-start-line="1202" selection-end-line="1202" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/test/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="132" column="51" lean-forward="true" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+        <state relative-caret-position="253">
+          <caret line="11" column="93" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="93" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1543985892663" expanded="true" signature="387:518" ph="..." />
-            <marker date="1543985892663" expanded="true" signature="839:844" ph="..." />
-            <marker date="1543985892663" expanded="true" signature="16772:16951" ph="..." />
-            <marker date="1543985892663" expanded="true" signature="18295:18298" ph="..." />
+            <marker date="1544521089019" expanded="true" signature="45:47" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/global_params/Global.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+        <state relative-caret-position="490">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python_3_6_5/Lib/tkinter/messagebox.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="259" column="12" lean-forward="true" selection-start-line="259" selection-start-column="12" selection-end-line="259" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1544523201367" expanded="true" signature="432:563" ph="..." />
+            <marker date="1544523201367" expanded="true" signature="884:889" ph="..." />
+            <marker date="1544523201367" expanded="true" signature="11080:11092" ph="..." />
+            <marker date="1544523201367" expanded="true" signature="17867:18046" ph="..." />
+            <marker date="1544523201367" expanded="true" signature="19390:19393" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/points/moved_points.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="54" column="104" selection-start-line="54" selection-start-column="104" selection-end-line="54" selection-end-column="104" />
+          <folding>
+            <marker date="1544523315306" expanded="true" signature="335:340" ph="..." />
+            <marker date="1544523315306" expanded="true" signature="417:2123" ph="..." />
+            <marker date="1544523315306" expanded="true" signature="2123:2128" ph="..." />
+            <marker date="1544523315306" expanded="true" signature="2643:2649" ph="..." />
+            <marker date="1544523315306" expanded="true" signature="2820:2825" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
